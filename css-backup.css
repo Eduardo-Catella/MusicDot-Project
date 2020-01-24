@@ -1,0 +1,1247 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e4255;
+  font-size: .7rem;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* Atributos */
+
+.--largura-maxima {
+  width: 100%;
+}
+
+.--largura-grande {
+  width: 80%;
+}
+
+.botao {
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: 2.9px;
+  text-transform: uppercase;
+  padding: 1rem 40px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border-radius: 6px;
+  transition: .25s;
+}
+
+.botao:hover {
+  transform: translate(0, .22rem);
+  transition: .25s;
+}
+
+/* Header */
+
+.header {
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+
+.header__logo {
+  width: 8.5rem;
+  padding: 1.5rem 0;
+}
+
+.header__navegacao {
+  font-weight: 700;
+  letter-spacing: 2.6px;
+  background-color: rgba(39, 43, 58, 0.53);
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__navegacao a {
+  color: #fff;
+}
+
+/* Chamada Cursos */
+
+.cursos {
+  color: #fff;
+  text-align: center;
+  background-image: url(../img/home-background-mobile.png);
+  background-size: cover;
+  padding-top: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursos__chamada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chamada__titulo {
+  color: #e93d50;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+
+.chamada__titulo--destaque {
+  color: #fff;
+}
+
+.chamada p {
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+
+.chamada__cursos__matricula {
+  color: #fff;
+  background-color: #e93d50;
+}
+
+.cursos__lista {
+  font-size: .7rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 7rem 7rem;
+  grid-template-rows: repeat(5, 4.5rem);
+  grid-gap: .5rem;
+  text-align: center;
+}
+
+.cursos__lista li {
+  border: 1px solid #4286f4;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  background-position: top .6rem center;
+  padding-top: 2.5rem;
+  transition: .25s;
+}
+
+.cursos__lista li:hover {
+  transform: translate(0, .22rem);
+  background-color: rgba(66, 134, 244, 0.337);
+  transition: .25s;
+}
+
+.curso--tecladopiano {
+  background-image: url("../img/icone-teclado-piano.svg");
+}
+
+.curso--violaoguitarra {
+  background-image: url("../img/icones-violao-guitarra.svg");
+}
+
+.curso--baixo {
+  background-image: url("../img/icones-baixo.svg");
+}
+
+.curso--bateria {
+  background-image: url("../img/icones-bateria.svg");
+}
+
+.curso--percussao {
+  background-image: url("../img/icones-percussao.svg");
+}
+
+.curso--canto {
+  background-image: url("../img/icones-canto.svg");
+}
+
+.curso--audio {
+  background-image: url("../img/icones-audio.svg");
+}
+
+.curso--teoria {
+  background-image: url("../img/icones-teoria.svg");
+}
+
+.curso--sopro {
+  background-image: url("../img/icones-sopro.svg");
+}
+
+.curso--cordas {
+  background-image: url("../img/icone-cordas.svg");
+}
+
+.cursos__lista img {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Chamada Video */
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #2a3042;
+}
+
+.video--mobile {
+  width: 100%;
+  height: 8.9rem;
+}
+
+.video--desktop {
+  display: none;
+}
+
+.video__textos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+
+.textos__titulo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+  margin-bottom: .5rem;
+}
+
+.textos__titulo::first-line {
+  color: #e93d50;
+}
+
+/* Planos */
+
+.planos {
+  background-image: url(../img/planos-background-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 1.8rem;
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+
+.planos::before {
+  content: "";
+  width: 81%;
+  height: .1rem;
+  background-color: #e93d50;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.planos__titulo {
+  font-size: .85rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.planos__card {
+  background-color: #f76148;
+  border-radius: 8px;
+  margin-bottom: 1.3rem;
+  color: #fff;
+  padding: 4rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 .8rem .1rem rgba(0, 0, 0, .2);
+  background-repeat: no-repeat;
+  background-size: 1.7rem;
+  background-position: top 1.5rem center;
+}
+
+.card--anual {
+  background-image: url(../img/simbolo-musidot-branco.svg);
+}
+
+.card--semestral {
+  background-image: url(../img/simbolo-musidot-dark.svg);
+}
+
+.plano__titulo {
+  margin: 8px 0;
+}
+
+.planos__card p + p {
+  font-weight: 300;
+  margin-top: .2rem;
+  letter-spacing: 1.5px;
+}
+
+.plano__titulo, .plano__titulo + p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.valor--destaque {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.planos__card span {
+  font-weight: 500;
+}
+
+.cards__botao {
+  color: #f76148;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: .8rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 .8rem .1rem rgba(0, 0, 0, .2);
+}
+
+.card--anual {
+  position: relative;
+  z-index: 2;
+}
+
+.plano--destaque {
+  color: #f76148;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  width: 8rem;
+  padding: .4rem 0 .8rem;
+  border-radius: 5px;
+  box-shadow: 0 0 .8rem .05rem rgba(0, 0, 0, .2);
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -65%);
+  z-index: 1;
+}
+
+.card--anual p + p, .card--semestral p + p {
+  margin-bottom: 1rem;
+}
+
+.planos > p {
+  width: 250px;
+  font-size: .6rem;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.planos a {
+  font-weight: 700;
+}
+
+/* Benefícios */
+
+.beneficios {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beneficios__titulo {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.beneficios__lista li {
+  padding-top: 5.5rem;
+  background-repeat: no-repeat;
+  background-size: 4rem 4rem;
+  background-position: top 20px center;
+}
+
+.beneficio--paravoce {
+  background-image: url(../img/icone-beneficios-tudo-para-voce.svg);
+}
+
+.beneficio--duvidas {
+  background-image: url(../img/icone-beneficios-nenhuma-duvida.svg);
+}
+
+.beneficio--didatica {
+  background-image: url(../img/icone-beneficios-didatica-cuidadosa.svg);
+}
+
+.beneficio--online {
+  background-image: url(../img/icone-beneficios-online.svg);
+}
+
+.beneficio__titulo {
+  font-size: .8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+}
+
+.beneficio__texto {
+  line-height: 1rem;
+}
+
+/* Chamada YouTube */
+
+.chamada__youtube {
+  background-color: #2e4255;
+  display: grid;
+  justify-items: center;
+}
+
+.chamada__youtube__canal {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.2rem 2rem .9rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.icone--youtube::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/icone-youtube.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.canal__titulo {
+  color: #e93d50;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: .9rem;
+  margin-bottom: .1rem;
+  letter-spacing: .5px;
+}
+
+.canal__texto {
+  font-size: .6rem;
+  letter-spacing: .8px;
+  line-height: 12px;
+  margin-bottom: 1rem;
+}
+
+.canal__button {
+  color: #fff;
+  background-color: #e93d50;
+}
+
+.video__descricao {
+  width: 85%;
+}
+
+.descricao__titulo {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 15px;
+  margin-bottom: .5rem;
+}
+
+.descricao__titulo::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/play-button.svg);
+  background-size: 100%;
+  display: block;
+  margin: 1.2rem auto 1rem;
+}
+
+.chamada__youtube--video1 {
+  background-image: url(../img/videos-thumbnail-video1.png);
+}
+
+.chamada__youtube--video2 {
+  background-image: url(../img/videos-thumbnail-video2.png);
+}
+
+.chamada__youtube--video1, .chamada__youtube--video2 {
+  background-size: cover;
+  width: 100%;
+}
+
+/* Chamada Aplicativo */
+
+.chamada__aplicativo {
+  color: #fff;
+  text-align: center;
+  background-color: #f76148;
+  padding: 2rem 7.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.aplicativo__titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .8rem;
+  line-height: 24px;
+  grid-column-end: span 2;
+}
+
+.aplicativo__texto {
+  line-height: 20px;
+  margin-bottom: 15px;
+  grid-column-end: span 2; 
+}
+
+.texto__destaque {
+  font-weight: 600;
+}
+
+.chamada__aplicativo__button--wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aplicativo__button {
+  color: #e93d50;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 5.9rem;
+  padding: 1rem 0 1rem 1rem;
+  box-sizing: border-box;
+  font-size: .5rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.app__download--android {
+  background-image: url(../img/icone-android-logo.svg);
+  background-position: left .5rem center;
+  padding-left: 1.4rem;
+}
+
+.app__download--ios {
+  background-image: url(../img/icone-apple-logo.svg);
+  background-position: left 1rem top .4rem;
+}
+
+.aplicativo--icone {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .2rem;
+  vertical-align: middle;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #e93d50;
+  padding: 20px 0 30px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+
+.footer::before {
+  content: "";
+  width: 81%;
+  height: .13rem;
+  background-color: #e93d50;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sobre__logo {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.sobre__contato {
+  font-weight: 500;
+  line-height: 15px;
+  margin-bottom: 1rem;
+  font-size: .6rem;
+}
+
+.sobre__midia {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.sobre__midia a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 2rem;
+  height: 2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.sobre__midia a[href*="facebook.com"] {
+  background-image: url(../img/footer-icone-facebook.svg);
+}
+
+.sobre__midia a[href*="youtube.com"] {
+  background-image: url(../img/footer-icone-youtube.svg);
+}
+
+.sobre__midia a[href*="instagram.com"] {
+  background-image: url(../img/footer-icone-instagram.svg);
+}
+
+.footer__titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.footer__lista {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer__lista li {
+  margin-bottom: 10px;
+}
+
+.novidades__form {
+  background-color: #e93d50;
+  width: 100%;
+  border: 2px solid #e93d50;
+  border-radius: 7px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.novidades__email {
+  padding: .6rem .4rem;
+  border: none;
+  flex-grow: 1;
+}
+
+.novidades__submit {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #e93d50;
+  border: none;
+  flex-grow: 1;
+}
+
+/* Media para tablet */
+
+@media(min-width:768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  .header__navegacao {
+    background-color: unset;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .header__navegacao li {
+    margin-left: 2rem;
+    font-weight: 500;
+  }
+
+  .header__matricula {
+    color: #fff;
+    background-color: #e93d50;
+    padding: 1rem 2rem;
+    display: block;
+    border-radius: 6px;
+    transition: .25s;
+  }
+
+  .header__matricula:hover {
+    background-color: rgb(240, 48, 70);
+    transform: translate(0, .22rem);
+    transition: .25s;
+  }
+
+  /* Chamada cursos */
+
+  .cursos {
+    padding: 6rem 5% 0;
+    background-image: url(../img/home-background.png);
+  }
+
+  .cursos__chamada {
+    width: 300px;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .chamada__titulo {
+    font-size: 2rem;
+  }
+
+  .chamada__cursos__matricula {
+    display: none;
+  }
+
+  .cursos__lista {
+    grid-template-columns: repeat(5, 7rem);
+    grid-template-rows: 5.5rem 5.5rem 5.5rem;
+    gap: .8rem;
+  }
+
+  .cursos__lista li {
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    background-position: top 1rem center;
+    padding-top: 2.5rem;
+  }
+
+  .cursos__lista .curso--destaque {
+    order: -1;
+    grid-area: 1/1/span 3/3;
+    padding-top: 5.5rem;
+    background-size: 6rem 6rem;
+    background-position: top 3.6rem center;
+  }
+
+
+  /* Chamada Video */
+
+  .video--mobile {
+    display: none;
+  }
+
+  .video--desktop {
+    display: block;
+    width: 100%;
+    height: 12.8rem;
+  }
+
+  .textos__titulo {
+    font-size: 1.5rem;
+  }
+
+  /* Cards */
+
+  .planos {
+    grid-template-columns: 20rem 20rem;
+    grid-template-areas:
+    "header header"
+    "card1 card2" 
+    "footer footer";
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+    background-image: url(../img/planos-background.png);
+    background-size: cover;
+  }
+
+  .planos__titulo {
+    grid-area: header;
+  }
+
+  .cards__planoanual {
+    grid-area: card2;
+  }
+
+  .card--semestral {
+    grid-area: card1;
+  }
+
+  .planos__pagamentos {
+    grid-column-end: span 2;
+  }
+
+  .planos--maisassinado {
+    font-size: .8rem;
+  }
+
+  .planos__card {
+    padding: 6rem 2rem 2rem;
+    justify-content: space-between;
+    background-size: 2.5rem;
+    background-position: top 2.5rem center;
+  }
+
+  .planos__card img {
+    width: 2.5rem;
+  }
+
+  .plano__titulo, .plano__titulo + p {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .valor--destaque {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .plano--destaque {
+    font-size: .6rem;
+  }
+
+  .cards__botao {
+    font-size: 1.1rem;
+    transition: .25s;
+  }
+
+  .planos > p {
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  /* Beneficios */
+
+  .beneficios {
+    margin-bottom: 3.7rem;
+  }
+
+  .beneficios__lista {
+    display: grid;
+    grid-template-columns: 17.5rem 17.5rem;
+    gap: 1rem;
+  }
+
+  .beneficios__titulo {
+    margin-bottom: 1rem;
+  }
+
+  .beneficio__titulo {
+    font-size: 1.1rem;
+  }
+
+  .beneficio__texto {
+    font-size: .8rem;
+  }
+
+  /* Chamada YouTube */
+  .chamada__youtube {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "chamada chamada"
+    "video1 video2";
+  }
+
+  .youtube__informacao {
+    padding: 2rem 17%;
+    box-sizing: border-box;
+    grid-area: chamada;
+  }
+
+  .--icone-youtube::before {
+    width: 5rem;
+    height: 5rem;
+  }
+  .chamada__youtube--video1 {
+    grid-area: video1;
+  }
+
+  .chamada__youtube--video2 {
+    grid-area: video2;
+  }
+
+  .canal__titulo {
+    font-size: 1.5rem;
+  }
+
+  .descricao__texto {
+    font-size: .8rem;
+  }
+
+  /* Chamada Aplicativo */
+
+  .chamada__aplicativo {
+    background-image: url(../img/mockup-app.png);
+    background-size: 12rem;
+    background-position: left 20% center;
+    background-repeat: no-repeat;
+    padding: 5rem 20%;
+    grid-template-columns: 1fr 9rem 9rem;
+    column-gap: 1rem;
+    grid-template-areas: 
+    ". titulo titulo"
+    ". texto texto"
+    ". android ios";
+  }
+
+  .aplicativo__titulo {
+    font-size: 1.5rem;
+    line-height: 29px;
+    grid-area: titulo;
+  }
+
+  .aplicativo__texto {
+    line-height: 28px;
+    grid-area: texto;
+  }
+
+  .app__download--android {
+    grid-area: android;
+    justify-self: flex-end;
+  }
+
+  .app__download--ios {
+    grid-area: ios;
+    justify-self: flex-start;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 2rem 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "cursos materiais"
+    "sobre novidades";
+    gap: 1rem;
+  }
+
+  .footer__lista {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .footer__sobre {
+    grid-area: sobre;
+  }
+
+  .footer__cursos {
+    grid-area: cursos;
+  }
+
+  .footer__materiais {
+    grid-area: materiais;
+  }
+
+  .footer__materiais, .footer__cursos {
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    justify-content: center;
+  }
+
+  .footer__novidades {
+    grid-area: novidades;
+    padding: 1rem;
+  }
+}
+
+@media(min-width:1200px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  /* Header */
+
+  .header {
+    padding: 0 10%;
+  }
+
+  .header-logo {
+    width: 10.5rem;
+  }
+
+  /* Cursos */
+
+  .cursos {
+    padding: 7rem 10% 0;
+  }
+
+  .cursos__chamada {
+    width: 450px;
+  }
+
+  .chamada__titulo {
+    font-size: 2.5rem;
+  }
+
+  .cursos__lista {
+    grid-template-columns: repeat(6, 9.3rem);
+    grid-template-rows: 7.5rem 7.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cursos__lista li {
+    background-repeat: no-repeat;
+    background-size: 3rem 3rem;
+    background-position: top 1rem center;
+    padding-top: 2.5rem;
+  }
+
+  .cursos__lista .curso--destaque {
+    order: -1;
+    grid-area: 1/1/span 2/2;
+    padding-top: 6rem;
+    background-size: 6rem 6rem;
+    background-position: top 3.6rem center;
+  }
+
+  .cursos__lista .curso--destaque2 {
+    order: -1;
+    grid-area: 1/4/span 2/5;
+    padding-top: 6rem;
+    background-size: 6rem 6rem;
+    background-position: top 3.6rem center;
+  }
+
+  .cursos__lista p {
+    font-size: .9rem;
+  }
+
+
+  .curso--destaque2 .imagem-destaque2 {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: .8rem;
+  }
+
+  /* Chamada Video */
+
+  .video--desktop {
+    height: 19.8rem;
+  }
+
+  .video__textos {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .video__textos::before {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .textos__titulo {
+    font-size: 1.9rem;
+  }
+
+  /* Chamada Planos */
+
+  .planos__titulo {
+    font-size: 1.2rem;
+  }
+
+  .plano--destaque {
+    font-size: .9rem;
+    width: 10rem;
+    transform: translate(-50%, -75%);
+  }
+
+  /* Beneficios */
+
+  .beneficios__titulo {
+    font-size: 1.3rem;
+  }
+
+  .beneficios__lista {
+    gap: 1.3rem;
+    grid-template-columns: 22.5rem 22.5rem;
+  }
+
+  .beneficios__lista li {
+    padding-top: 7.25rem;
+    background-size: 6rem 6rem;
+  }
+
+  .beneficio__titulo {
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+  }
+
+  .beneficio__texto {
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
+
+  /* Chamada YouTube */
+
+  .youtube__informacao {
+    padding: 4rem 20%;
+  }
+
+  .icone--youtube::before {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .canal__titulo {
+    font-size: 2rem;
+    margin-bottom: .4rem;
+  }
+
+  .canal__texto {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .video__descricao {
+    width: 75%;
+    text-align: left;
+  }
+
+  .descricao__titulo {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .descricao__texto {
+    font-size: .9rem;
+  }
+
+  /* Chamada Aplicativo */
+
+  .chamada__aplicativo {
+    grid-template-columns: 1fr 12rem 12rem;
+  }
+
+  .aplicativo__titulo {
+    font-size: 1.8rem;
+  }
+
+  .aplicativo__button {
+    width: 9.5rem;
+    font-size: .8rem;
+    background-size: 1.8rem;
+    padding: 1.5rem 0 1.5rem 1rem;
+  }
+
+  .app__download--android {
+    background-position: left .7rem top .8rem;
+    padding-left: 1.4rem;
+  }
+
+  .app__download--ios {
+    background-position: left 1.3rem top .6rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "sobre cursos materiais novidades";
+    text-align: left;
+    padding: 2rem 10%;
+  }
+
+  .footer__lista a {
+    font-size: .8rem;
+  }
+
+  .footer__materiais, .footer__cursos {
+    grid-template-rows: 1.5rem 1fr;
+  }
+
+  .footer__titulo {
+    font-size: .8rem;
+  }
+
+  .sobre__midia {
+    justify-content: flex-start;
+  }
+
+  .sobre__contato {
+    font-size: .6rem;
+  }
+
+  .materiais__lista {
+    justify-content: flex-start;
+  }
+
+  .footer__novidades {
+    padding: 0;
+  }
+}
+
+@media(min-width:1440px) {
+  .cursos__lista {
+    grid-template-columns: repeat(6, 11rem);
+  }
+}
+
+@media(min-width:1600px) {
+  /* Chamada Cursos */
+
+  .cursos__lista {
+    grid-template-columns: repeat(6, 13rem);
+  }
+
+  .cursos__lista img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+  }
+
+  /* Chamada Video */
+
+  .video--desktop {
+    height: 26.8rem;
+  }
+
+  /* Footer */
+
+  .sobre__logo {
+    width: 10rem;
+  }
+
+  .sobre__contato {
+    font-size: .8rem;
+  }
+
+  .sobre__midia a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 9px;
+  }
+
+  .footer__titulo {
+    font-size: .9rem;
+  }    
+}
